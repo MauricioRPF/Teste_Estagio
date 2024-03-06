@@ -1,0 +1,73 @@
+1) 91
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2) 
+
+import 'dart:io';
+
+void main() {
+  print('Por favor, insira um número para verificar na sequência de Fibonacci:');
+  int num = int.parse(stdin.readLineSync()!);
+
+  int a = 0, b = 1, c = 0;
+
+  if (num == a || num == b) {
+    print('O número $num pertence à sequência de Fibonacci.');
+    return;
+  }
+
+  while (c < num) {
+    c = a + b;
+    a = b;
+    b = c;
+    if (c == num) {
+      print('O número $num pertence à sequência de Fibonacci.');
+      return;
+    }
+  }
+
+  print('O número $num não pertence à sequência de Fibonacci.');
+}
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3)
+
+a) 9
+
+b) 128
+
+c) 49
+
+d) 100
+
+e) 13
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+4)
+
+Ligue o primeiro interruptor e deixe-o ligado por alguns minutos. Isso fará com que a lâmpada correspondente se aqueça.
+Após alguns minutos, desligue o primeiro interruptor e ligue o segundo interruptor.
+Entre na sala das lâmpadas.
+Ao entrar na sala:
+
+A lâmpada que está acesa é controlada pelo segundo interruptor (pois você o deixou ligado).
+Toque as duas lâmpadas apagadas. A lâmpada que estiver quente é controlada pelo primeiro interruptor (pois foi ligada por alguns minutos e depois desligada).
+A lâmpada que está fria e apagada é controlada pelo terceiro interruptor (o único que você não usou).
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+5)
+
+void main() {
+  String str = "Hello, Dart!"; // Defina a string aqui.
+  String reversedStr = "";
+
+  for (int i = str.length - 1; i >= 0; i--) {
+    reversedStr += str[i];
+  }
+
+  print(reversedStr);
+}
